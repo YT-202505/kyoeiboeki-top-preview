@@ -1,0 +1,1422 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow, noarchive" />
+    <title>杭州協栄貿易有限公司 | 産地直結の日中越境貿易</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700&amp;family=Noto+Serif+JP:wght@600;700&amp;family=Shippori+Mincho:wght@700&amp;display=swap" rel="stylesheet" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['"Noto Sans JP"', "sans-serif"],
+              serif: ['"Noto Serif JP"', "serif"],
+              mincho: ['"Shippori Mincho"', "serif"],
+            },
+            colors: {
+              primary: {
+                DEFAULT: "#315344",
+                light: "#5f806f",
+                dark: "#1f382f",
+              },
+              secondary: "#f5f2ea",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 5.5rem;
+      }
+
+      p,
+      p.font-light,
+      p.font-normal,
+      p.font-medium,
+      p.font-semibold,
+      p.font-bold {
+        font-family: "Noto Sans JP", sans-serif;
+        font-weight: 300;
+      }
+
+      #results table,
+      #results th,
+      #results td {
+        font-family: "Noto Sans JP", sans-serif;
+        font-weight: 300;
+      }
+
+      /* ヒーロースライドショー */
+      .hero-slide {
+        transition: opacity 1.6s ease-in-out;
+        opacity: 0;
+      }
+      .hero-slide.is-active {
+        opacity: 1;
+      }
+      .hero-slide img {
+        transform: scale(1.06);
+        transition: transform 8s ease-out;
+      }
+      .hero-slide.is-active img {
+        transform: scale(1);
+      }
+
+      /* Illustratorの編集用テキストレイヤーを重ねるための無文字背景 */
+      html.export-text-background body * {
+        color: transparent !important;
+        text-shadow: none !important;
+      }
+
+      /* AI/PDF用の全ページ画像で、未スクロール範囲も完成状態で取得する */
+      html.export-visual .reveal,
+      html.export-visual .bar-fill,
+      html.export-visual .line-fill {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+      }
+      html.export-visual .hero-anim-1,
+      html.export-visual .hero-anim-2,
+      html.export-visual .hero-anim-3,
+      html.export-visual .hero-anim-4 {
+        animation: none !important;
+        opacity: 1 !important;
+        transform: none !important;
+      }
+
+      /* Illustrator共有用：通常の画面表示には影響しない印刷設定 */
+      @media print {
+        @page {
+          size: 1425px 9403px;
+          margin: 0;
+        }
+        html,
+        body {
+          width: 1425px !important;
+          margin: 0 !important;
+          -webkit-print-color-adjust: exact !important;
+          print-color-adjust: exact !important;
+        }
+        #site-header {
+          position: absolute !important;
+        }
+        body > section:first-of-type {
+          min-height: 792px !important;
+          height: 792px !important;
+        }
+        #floating-cta {
+          display: none !important;
+        }
+        .reveal,
+        .bar-fill,
+        .line-fill {
+          opacity: 1 !important;
+          transform: none !important;
+        }
+
+        /* Chrome印刷時もPC用Tailwindレイアウトを維持 */
+        .sm\:block,
+        .md\:block {
+          display: block !important;
+        }
+        .md\:flex {
+          display: flex !important;
+        }
+        .md\:hidden {
+          display: none !important;
+        }
+        .sm\:flex-row,
+        .md\:flex-row,
+        .lg\:flex-row {
+          flex-direction: row !important;
+        }
+        .md\:flex-1 {
+          flex: 1 1 0% !important;
+        }
+        .md\:items-end,
+        .lg\:items-end {
+          align-items: flex-end !important;
+        }
+        .md\:items-stretch {
+          align-items: stretch !important;
+        }
+        .md\:justify-between,
+        .lg\:justify-between {
+          justify-content: space-between !important;
+        }
+        .sm\:grid-cols-2,
+        .md\:grid-cols-2 {
+          grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        }
+        .sm\:grid-cols-3,
+        .md\:grid-cols-3 {
+          grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+        }
+        .sm\:grid-cols-4,
+        .md\:grid-cols-4 {
+          grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+        }
+        .lg\:grid-cols-\[1\.1fr_0\.9fr\] {
+          grid-template-columns: 1.1fr 0.9fr !important;
+        }
+        .lg\:grid-cols-\[1\.8fr_0\.7fr_0\.7fr_0\.9fr\] {
+          grid-template-columns: 1.8fr 0.7fr 0.7fr 0.9fr !important;
+        }
+        .sm\:col-span-1,
+        .lg\:col-span-1 {
+          grid-column: span 1 / span 1 !important;
+        }
+        .sm\:col-span-2 {
+          grid-column: span 2 / span 2 !important;
+        }
+        .sm\:col-span-3 {
+          grid-column: span 3 / span 3 !important;
+        }
+        .md\:w-1\/2 {
+          width: 50% !important;
+        }
+        .md\:w-1\/3 {
+          width: 33.333333% !important;
+        }
+        .md\:w-2\/3 {
+          width: 66.666667% !important;
+        }
+        .md\:w-5 {
+          width: 1.25rem !important;
+        }
+        .md\:max-w-xl {
+          max-width: 36rem !important;
+        }
+        .md\:gap-5 {
+          gap: 1.25rem !important;
+        }
+        .lg\:gap-16 {
+          gap: 4rem !important;
+        }
+        .md\:p-6 {
+          padding: 1.5rem !important;
+        }
+        .md\:p-8 {
+          padding: 2rem !important;
+        }
+        .md\:p-10 {
+          padding: 2.5rem !important;
+        }
+        .lg\:p-12 {
+          padding: 3rem !important;
+        }
+        .sm\:px-8,
+        .md\:px-8 {
+          padding-left: 2rem !important;
+          padding-right: 2rem !important;
+        }
+        .md\:pt-12 {
+          padding-top: 3rem !important;
+        }
+        .lg\:pt-24 {
+          padding-top: 6rem !important;
+        }
+        .md\:pb-16 {
+          padding-bottom: 4rem !important;
+        }
+        .md\:py-0 {
+          padding-top: 0 !important;
+          padding-bottom: 0 !important;
+        }
+        .md\:py-16 {
+          padding-top: 4rem !important;
+          padding-bottom: 4rem !important;
+        }
+        .md\:py-20 {
+          padding-top: 5rem !important;
+          padding-bottom: 5rem !important;
+        }
+        .md\:py-28 {
+          padding-top: 7rem !important;
+          padding-bottom: 7rem !important;
+        }
+        .md\:mb-16 {
+          margin-bottom: 4rem !important;
+        }
+        .md\:text-sm {
+          font-size: 0.875rem !important;
+          line-height: 1.25rem !important;
+        }
+        .md\:text-base {
+          font-size: 1rem !important;
+          line-height: 1.5rem !important;
+        }
+        .md\:text-lg {
+          font-size: 1.125rem !important;
+          line-height: 1.75rem !important;
+        }
+        .md\:text-2xl {
+          font-size: 1.5rem !important;
+          line-height: 2rem !important;
+        }
+        .md\:text-3xl {
+          font-size: 1.875rem !important;
+          line-height: 2.25rem !important;
+        }
+        .sm\:text-4xl,
+        .md\:text-4xl {
+          font-size: 2.25rem !important;
+          line-height: 2.5rem !important;
+        }
+        .md\:text-5xl {
+          font-size: 3rem !important;
+          line-height: 1 !important;
+        }
+        .md\:leading-\[1\.35\] {
+          line-height: 1.35 !important;
+        }
+        .md\:rotate-0 {
+          transform: rotate(0deg) !important;
+        }
+      }
+      #hero-headline,
+      #hero-strength-label {
+        transition:
+          opacity 0.35s ease,
+          transform 0.35s ease;
+      }
+      #hero-headline.is-fading,
+      #hero-strength-label.is-fading {
+        opacity: 0;
+        transform: translateY(8px);
+      }
+
+      /* スクロール連動フェードイン */
+      .reveal {
+        opacity: 0;
+        transform: translateY(28px);
+        transition:
+          opacity 0.8s ease,
+          transform 0.8s ease;
+      }
+      .reveal.is-visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      .reveal-delay-1.is-visible {
+        transition-delay: 0.1s;
+      }
+      .reveal-delay-2.is-visible {
+        transition-delay: 0.2s;
+      }
+      .reveal-delay-3.is-visible {
+        transition-delay: 0.3s;
+      }
+      .reveal-delay-4.is-visible {
+        transition-delay: 0.4s;
+      }
+      .reveal-delay-5.is-visible {
+        transition-delay: 0.5s;
+      }
+
+      /* ヘッダー：スクロールで影を強調 */
+      header.is-scrolled {
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+      }
+
+      /* 実績バーの伸長アニメーション */
+      .bar-fill {
+        height: 0% !important;
+        transition: height 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+      }
+      .bar-fill.is-visible {
+        height: var(--bar-h) !important;
+      }
+
+      .img-zoom {
+        overflow: hidden;
+      }
+
+      /* ヘッダーメニュー：ホバーで下線が左から伸びる */
+      .nav-underline {
+        position: relative;
+        padding-bottom: 2px;
+      }
+      .nav-underline::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #315344;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.3s ease;
+      }
+      .nav-underline:hover::after {
+        transform: scaleX(1);
+      }
+
+      /* モバイルメニュー */
+      #mobile-menu {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease;
+      }
+      #mobile-menu.is-open {
+        max-height: 480px;
+      }
+
+      /* スクロール誘導シェブロン */
+      @keyframes bounce-down {
+        0%,
+        100% {
+          transform: translateY(0);
+          opacity: 0.7;
+        }
+        50% {
+          transform: translateY(10px);
+          opacity: 1;
+        }
+      }
+      .scroll-cue {
+        animation: bounce-down 2s ease-in-out infinite;
+      }
+
+      @keyframes fade-in-up {
+        from {
+          opacity: 0;
+          transform: translateY(24px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .hero-anim-1 {
+        animation: fade-in-up 0.9s ease both;
+        animation-delay: 0.1s;
+      }
+      .hero-anim-2 {
+        animation: fade-in-up 0.9s ease both;
+        animation-delay: 0.3s;
+      }
+      .hero-anim-3 {
+        animation: fade-in-up 0.9s ease both;
+        animation-delay: 0.5s;
+      }
+      .hero-anim-4 {
+        animation: fade-in-up 0.9s ease both;
+        animation-delay: 0.7s;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .reveal,
+        .hero-slide,
+        .hero-slide img,
+        .bar-fill,
+        .img-zoom img,
+        .hero-anim-1,
+        .hero-anim-2,
+        .hero-anim-3,
+        .hero-anim-4,
+        .scroll-cue {
+          animation: none !important;
+          transition: none !important;
+          opacity: 1 !important;
+          transform: none !important;
+        }
+      }
+    </style>
+  </head>
+  <body class="font-sans text-gray-800 bg-white">
+    <header id="site-header" class="bg-white/95 backdrop-blur-sm shadow-sm fixed w-full top-0 z-50 transition-shadow duration-300">
+      <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+        <div class="leading-tight">
+          <h1 class="text-xl md:text-2xl font-bold text-primary">杭州協栄貿易有限公司</h1>
+          <p class="hidden md:block text-[11px] tracking-widest text-gray-400">HANGZHOU XIERONG TRADE CO., LTD.</p>
+        </div>
+
+        <!-- ナビとお問い合わせボタンを1つのグループにまとめ、隣接配置に変更 -->
+        <div class="hidden md:flex items-center gap-8">
+          <!-- 修正箇所：WordPressの複数ページを想定したメニュー構成に変更 -->
+          <nav class="flex space-x-8 items-center text-gray-700 font-medium">
+            <a href="/" class="nav-underline hover:text-primary transition">ホーム</a>
+            <a href="/company/" class="nav-underline hover:text-primary transition">会社概要</a>
+            <a href="/services/" class="nav-underline hover:text-primary transition">事業内容</a>
+            <a href="/products/" class="nav-underline hover:text-primary transition">取扱商品</a>
+          </nav>
+
+          <!-- お問い合わせはボタンデザインのまま、別ページへのリンクに変更 -->
+          <a href="/contact/" class="inline-block bg-primary text-white px-6 py-2 rounded-full font-medium hover:bg-primary-dark transition shadow-sm"> お問い合わせ </a>
+        </div>
+
+        <!-- モバイルメニューボタン -->
+        <button id="mobile-menu-btn" class="md:hidden text-gray-600 focus:outline-none" aria-label="メニューを開く" aria-expanded="false" aria-controls="mobile-menu">
+          <svg id="menu-icon-open" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+          <svg id="menu-icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+        </button>
+      </div>
+
+      <!-- モバイルメニュー本体 -->
+      <nav id="mobile-menu" class="md:hidden bg-white border-t border-gray-100">
+        <div class="container mx-auto px-4 py-4 flex flex-col space-y-4 text-gray-700 font-medium">
+          <a href="/" class="hover:text-primary transition">ホーム</a>
+          <a href="/company/" class="hover:text-primary transition">会社概要</a>
+          <a href="/services/" class="hover:text-primary transition">事業内容</a>
+          <a href="/products/" class="hover:text-primary transition">取扱商品</a>
+          <a href="/contact/" class="inline-block bg-primary text-white px-6 py-2 rounded-full font-medium text-center hover:bg-primary-dark transition shadow-sm"> お問い合わせ </a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ヒーローセクション：会社の4つの強みを伝える4枚スライド -->
+    <section class="relative pt-20 lg:pt-24 overflow-hidden min-h-[88vh] flex items-center bg-primary-dark">
+      <div id="hero-slideshow" class="absolute inset-0 z-0">
+        <div class="hero-slide is-active absolute inset-0" data-slide="0" data-label="01　現地直買い" data-catch="<span class='block'>原産地から、まっすぐ。</span><span class='block'>産地直結が生む、</span><span class='block'>確かな品質と価格。</span>">
+          <img src="img/hero-harvest-group.webp" alt="山あいの産地でスタッフが収穫物を手に並ぶ様子" width="1900" height="1425" class="w-full h-full object-cover" />
+        </div>
+        <div class="hero-slide absolute inset-0" data-slide="1" data-label="02　一貫サポート" data-catch="<span class='block'>物流も、通関も、法務も。</span><span class='block'>越境貿易の全行程を、</span><span class='block'>一貫サポート。</span>">
+          <img src="img/syukaku.webp" alt="産地で農産物を確認する様子" width="1280" height="960" class="w-full h-full object-cover" />
+        </div>
+        <div class="hero-slide absolute inset-0" data-slide="2" data-label="03　品質保証" data-catch="<span class='block'>品質にも、輸送にも。</span><span class='block'>万が一のときも、</span><span class='block'>当社が責任を持って対応します。</span>">
+          <img src="img/hero-inspection-floor.webp" alt="広い検品・選別工場で作業する多数のスタッフ" width="2048" height="1536" class="w-full h-full object-cover" />
+        </div>
+        <div class="hero-slide absolute inset-0" data-slide="3" data-label="04　持続的経営" data-catch="<span class='block'>一度きりで終わらせない。</span><span class='block'>透明性と適正利益が支える、</span><span class='block'>10年先の取引。</span>">
+          <img src="img/konasu.webp" alt="産地で育つ農産物" width="2048" height="1536" class="w-full h-full object-cover" />
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/45 to-black/15"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/35 via-transparent to-black/10"></div>
+      </div>
+
+      <div class="container mx-auto px-5 md:px-8 relative z-10 text-white py-14 md:py-16">
+        <div class="max-w-4xl">
+          <!-- <p class="hero-anim-1 text-xs md:text-sm font-semibold tracking-[0.2em] text-white/80 mb-5">HANGZHOU × JAPAN / SINCE 2005</p> -->
+          <p id="hero-strength-label" class="hero-anim-2 inline-flex border-l-2 border-white pl-4 text-sm md:text-base font-bold tracking-wider mb-4">01　現地直買い</p>
+          <h2 id="hero-headline" class="hero-anim-2 font-serif text-[1.7rem] sm:text-4xl md:text-5xl xl:text-[3.25rem] leading-[1.4] md:leading-[1.35] mb-5 drop-shadow-lg">
+            <span class="block">原産地から、まっすぐ。</span>
+            <span class="block">産地直結が生む、</span>
+            <span class="block">確かな品質と価格。</span>
+          </h2>
+          <p class="hero-anim-3 text-base md:text-lg leading-8 text-white/90 mb-7 max-w-2xl drop-shadow">中国から日本へ、日本から中国へ。品質管理から国際物流・通関・納品まで、日本語で一貫して支えます。</p>
+          <div class="hero-anim-4 flex flex-col sm:flex-row gap-3 max-w-lg">
+            <a href="/contact/" class="bg-white text-primary-dark px-8 py-4 text-center font-bold hover:bg-secondary transition shadow-lg">相談する</a>
+            <a href="#services" class="border border-white/70 text-white px-8 py-4 text-center font-bold hover:bg-white/10 transition">取扱商品を見る</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="absolute bottom-7 left-0 right-0 z-10">
+        <div class="container mx-auto px-5 md:px-8 flex justify-end gap-2">
+          <button class="hero-dot w-10 h-1 bg-white transition-opacity" data-dot="0" aria-label="現地直買いのスライド"></button>
+          <button class="hero-dot w-10 h-1 bg-white opacity-40 transition-opacity" data-dot="1" aria-label="一貫サポートのスライド"></button>
+          <button class="hero-dot w-10 h-1 bg-white opacity-40 transition-opacity" data-dot="2" aria-label="ローカル対応のスライド"></button>
+          <button class="hero-dot w-10 h-1 bg-white opacity-40 transition-opacity" data-dot="3" aria-label="持続的経営のスライド"></button>
+        </div>
+      </div>
+    </section>
+
+    <nav id="page-nav" class="bg-white py-5 md:py-6 border-b border-gray-100" aria-label="ページ内ナビゲーション">
+      <div class="mx-auto max-w-[1280px]" style="padding-inline: 16px">
+        <ul class="flex flex-wrap items-center gap-y-3 font-bold text-gray-700" style="justify-content: space-between; font-size: 16px">
+          <li><a href="#features" class="hover:text-primary transition">4つの強み</a></li>
+          <li class="hidden sm:block w-px h-4 bg-gray-200" aria-hidden="true"></li>
+          <li><a href="#quality" class="hover:text-primary transition">品質・安全への取り組み</a></li>
+          <li class="hidden sm:block w-px h-4 bg-gray-200" aria-hidden="true"></li>
+          <li><a href="#services" class="hover:text-primary transition">取扱商品</a></li>
+          <li class="hidden sm:block w-px h-4 bg-gray-200" aria-hidden="true"></li>
+          <li><a href="#workflow" class="hover:text-primary transition">取引の流れ</a></li>
+          <li class="hidden sm:block w-px h-4 bg-gray-200" aria-hidden="true"></li>
+          <li><a href="#results" class="hover:text-primary transition">取引実績</a></li>
+          <li class="hidden sm:block w-px h-4 bg-gray-200" aria-hidden="true"></li>
+          <li><a href="#message" class="hover:text-primary transition">代表あいさつ</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- 追加：About us セクション（山と海が一枚に収まった実写で世界観を表現） -->
+    <!-- <section id="about" class="py-20 bg-white overflow-hidden">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="reveal">
+                    <p class="text-sm tracking-widest text-primary font-bold mb-2">ABOUT US</p>
+                    <h2 class="text-3xl md:text-4xl font-bold text-primary mb-6">山と海を、つなぐ。</h2>
+                    <p class="text-gray-900 leading-relaxed mb-4">
+                        杭州協栄貿易有限公司は、2005年の創業以来、日本と中国を結ぶ越境貿易に専念してまいりました。日中両国の仕入拠点と長年築いたサプライチェーンを生かし、原産地での品質管理から物流、通関、配送まで一貫して対応しています。
+                    </p>
+                    <p class="text-gray-900 leading-relaxed">
+                        「どこで、誰が、どう作ったか」を説明できる商品だけを、確かな品質のままお届けする。それが、創業以来変わらない私たちの想いです。
+                    </p>
+                    <a href="/company/" class="mt-8 inline-flex items-center gap-2 text-primary font-bold group">
+                        会社概要を見る
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </a>
+                </div>
+                <div class="reveal reveal-delay-2">
+                    <img src="img/about-img.webp" alt="山と海が広がる海岸の風景" width="1920" height="1080" class="w-full rounded-2xl shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section id="features" class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16 reveal">
+          <p class="text-primary text-sm font-bold tracking-[0.2em] uppercase mb-3">Strengths</p>
+          <h2 class="text-3xl md:text-4xl font-mincho font-bold text-gray-900 mb-4">協栄貿易の4つの強み</h2>
+          <div class="w-20 h-1 bg-primary mx-auto"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+          <!-- 強み1 -->
+          <div class="reveal bg-secondary p-8 rounded-xl shadow-sm border border-gray-100">
+            <div class="flex items-start justify-between mb-4">
+              <div class="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                <svg class="w-7 h-7 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 16.657L13.414 20.9a2 2 0 01-2.828 0l-4.243-4.243a8 8 0 1111.314 0z"></path>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                </svg>
+              </div>
+              <div class="text-4xl text-primary/30 font-bold">01</div>
+            </div>
+            <h3 class="text-[24px] font-mincho font-bold mb-3">原産地から、まっすぐ。<br />産地直結が生む、確かな品質と価格。</h3>
+            <p class="font-sans font-light text-gray-900 leading-relaxed">当社は商社として、協力実績20年以上の製造メーカーから仕入れ、日本へ輸出しています。製造メーカーは、CIQ（中国税関の輸出入商品検疫検査局）に指定された栽培基地で原料を収穫しています。</p>
+          </div>
+          <!-- 強み2 -->
+          <div class="reveal reveal-delay-1 bg-secondary p-8 rounded-xl shadow-sm border border-gray-100">
+            <div class="flex items-start justify-between mb-4">
+              <div class="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                <svg class="w-7 h-7 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0zM13 17H7V7a1 1 0 011-1h6a1 1 0 011 1v3m0 0h4l3 3v4h-2m-5-7v7"></path></svg>
+              </div>
+              <div class="text-4xl text-primary/30 font-bold">02</div>
+            </div>
+            <h3 class="text-[24px] font-mincho font-bold mb-3">物流も通関も法務も。輸出も輸入も、<br />日中貿易の"すべて"をワンストップで。</h3>
+            <p class="font-sans font-light text-gray-900 leading-relaxed">商品の手配だけでなく、国際物流・通関手続き・倉庫保管・国内配送、さらに各国の法令に関するご相談まで一貫して対応します。複数の業者と個別にやり取りする必要はありません。窓口はひとつ、責任の所在もひとつです。</p>
+          </div>
+          <!-- 強み3 -->
+          <div class="reveal reveal-delay-2 bg-secondary p-8 rounded-xl shadow-sm border border-gray-100">
+            <div class="flex items-start justify-between mb-4">
+              <div class="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                <svg class="w-7 h-7 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg>
+              </div>
+              <div class="text-4xl text-primary/30 font-bold">03</div>
+            </div>
+            <h3 class="text-[24px] font-mincho font-bold mb-3">品質にも、輸送にも。<br />最後まで、責任を持って。</h3>
+            <p class="font-sans font-light text-gray-900 leading-relaxed">
+              万が一、商品の品質に関するクレームが発生した場合も、当社が責任を持って対応します。これまで大きなクレームが発生したことはありませんが、輸送中に梱包が破損し、やむを得ず商品を処分したケースでは、その費用も当社が負担しました。品質面・物流面を問わず、トラブル発生時の対応まで責任を持ってサポートします。
+            </p>
+          </div>
+          <!-- 強み4 -->
+          <div class="reveal reveal-delay-3 bg-secondary p-8 rounded-xl shadow-sm border border-gray-100">
+            <div class="flex items-start justify-between mb-4">
+              <div class="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                <svg class="w-7 h-7 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+              </div>
+              <div class="text-4xl text-primary/30 font-bold">04</div>
+            </div>
+            <h3 class="text-[24px] font-mincho font-bold mb-3">商品と取引に透明性を。<br />10年先の取引へ。</h3>
+            <p class="font-sans font-light text-gray-900 leading-relaxed">産地から納品までの流れを開示し、環境と労働環境に配慮したサプライチェーンを構築しています。無理な価格競争ではなく適正な利益を確保することで、供給を安定させ、長くお付き合いいただける関係を目指しています。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="quality" class="py-20 bg-gray-50 border-y border-gray-200">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col items-center gap-8 max-w-5xl mx-auto">
+          <div class="reveal text-center">
+            <p class="text-primary text-sm font-bold tracking-[0.2em] uppercase mb-3">Quality</p>
+            <h2 class="text-[36px] font-mincho font-bold text-gray-900">品質・安全への取り組み</h2>
+          </div>
+          <div class="reveal reveal-delay-1 img-zoom rounded-lg shadow-lg overflow-hidden w-full">
+            <img src="img/ninniku-sentaku.webp" alt="衛生服を着た作業員による手選別・検品の様子" width="1279" height="747" class="w-full h-full object-cover" />
+          </div>
+          <div class="reveal reveal-delay-2 w-full">
+            <div class="space-y-6">
+              <div>
+                <h3 class="font-mincho font-bold text-xl md:text-2xl mb-2 text-gray-800 flex items-center">
+                  <svg class="w-5 h-5 text-primary mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                  検査体制と産地管理
+                </h3>
+                <p class="font-sans font-light text-gray-900">
+                  食品も、石材も、日本のお客様が求める基準は世界でもっとも厳しい水準にあります。私たちは仕入れの段階から日本の基準を前提に管理を行い、現地の提携工場ではISO9001・HACCP・BSCIなどの国際認証を取得しています。残留農薬や水質、包装資材に至るまで第三者機関による検査を実施し、収穫から出荷までの工程を記録・管理しています。
+                </p>
+              </div>
+              <div>
+                <h3 class="font-mincho font-bold text-xl md:text-2xl mb-2 text-gray-800 flex items-center">
+                  <svg class="w-5 h-5 text-primary mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                  取得証明書の開示
+                </h3>
+                <p class="font-sans font-light text-gray-900">商品や取引条件に応じて、必要な確認事項と品質基準を事前に整理。検品や現地確認の状況を共有し、判断材料が見える取引を進めます。下記の証明書・検査報告書は実際に取得しているものをそのまま公開しております。</p>
+              </div>
+            </div>
+
+            <!-- ご提示可能な書類バッジ -->
+            <div class="flex flex-wrap gap-2 mt-6">
+              <a href="img/cert-iso9001.webp" target="_blank" rel="noopener" class="text-xs font-medium bg-white border border-primary/30 text-primary px-3 py-1.5 rounded-full hover:bg-primary/5 transition inline-flex items-center gap-1">
+                ISO9001
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+              </a>
+              <a href="img/cert-haccp.webp" target="_blank" rel="noopener" class="text-xs font-medium bg-white border border-primary/30 text-primary px-3 py-1.5 rounded-full hover:bg-primary/5 transition inline-flex items-center gap-1">
+                HACCP
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+              </a>
+              <a href="img/docs/bsci-2026.pdf" target="_blank" rel="noopener" class="text-xs font-medium bg-white border border-primary/30 text-primary px-3 py-1.5 rounded-full hover:bg-primary/5 transition inline-flex items-center gap-1">
+                BSCI認証
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+              </a>
+              <a href="img/docs/ifs-2025.pdf" target="_blank" rel="noopener" class="text-xs font-medium bg-white border border-primary/30 text-primary px-3 py-1.5 rounded-full hover:bg-primary/5 transition inline-flex items-center gap-1">
+                IFS認証
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+              </a>
+
+              <a href="img/docs/water-quality.pdf" target="_blank" rel="noopener" class="text-xs font-medium bg-white border border-primary/30 text-primary px-3 py-1.5 rounded-full hover:bg-primary/5 transition inline-flex items-center gap-1">
+                水質検査報告書
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+              </a>
+              <a href="img/docs/salt-inspection.pdf" target="_blank" rel="noopener" class="text-xs font-medium bg-white border border-primary/30 text-primary px-3 py-1.5 rounded-full hover:bg-primary/5 transition inline-flex items-center gap-1">
+                塩分検査報告書
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+              </a>
+              <a href="img/docs/packaging-material.pdf" target="_blank" rel="noopener" class="text-xs font-medium bg-white border border-primary/30 text-primary px-3 py-1.5 rounded-full hover:bg-primary/5 transition inline-flex items-center gap-1">
+                包装資材検査証明書
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+              </a>
+            </div>
+            <p class="text-sm text-gray-900 mt-2">※ 各バッジをクリックすると、実際の証明書・検査報告書を新しいタブで確認いただけます。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="relative overflow-hidden bg-slate-50 py-20 md:py-28">
+      <div class="absolute inset-x-0 top-0 h-72 bg-gradient-to-b from-[#edf3ef] to-transparent" aria-hidden="true"></div>
+      <div class="container mx-auto px-4 relative">
+        <div class="text-center reveal max-w-3xl mx-auto mb-12 md:mb-16">
+          <p class="text-primary text-sm font-bold tracking-[0.2em] uppercase mb-3">Products</p>
+          <h2 class="text-3xl md:text-4xl font-mincho font-bold text-gray-900 mb-5">取扱商品ラインナップ</h2>
+          <div class="w-14 h-1 bg-primary mx-auto mb-6 rounded-full"></div>
+          <p class="text-gray-900 leading-relaxed">産地と品質が見える商品を、中国と日本の双方向へ。<br class="hidden sm:block" />仕入れから通関・納品まで一貫してお手伝いします。</p>
+        </div>
+
+        <div class="max-w-6xl mx-auto space-y-10">
+          <!-- 中国から日本へ -->
+          <article id="services-export" class="reveal bg-white rounded-3xl border border-slate-200 shadow-[0_18px_55px_-32px_rgba(15,23,42,0.35)] overflow-hidden">
+            <div class="p-6 md:p-10">
+              <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-5 mb-8">
+                <div>
+                  <span class="inline-flex items-center gap-2 text-xs font-bold text-primary bg-[#edf3ef] border border-[#d8e4dc] px-3 py-1.5 rounded-full mb-4"> <span class="w-2 h-2 bg-primary rounded-full"></span> EXPORT TO JAPAN </span>
+                  <h3 class="text-2xl md:text-3xl font-mincho font-bold text-gray-900"><span class="text-4xl md:text-5xl">中国から</span>日本へ</h3>
+                </div>
+                <p class="md:max-w-xl text-sm md:text-base text-gray-900 leading-relaxed">浙江を中心とした仕入ネットワークから、日本市場へ。原産地での品質管理と一貫した物流体制で安定供給します。</p>
+              </div>
+
+              <div class="grid md:grid-cols-3 gap-5">
+                <div class="group rounded-2xl border border-slate-200 overflow-hidden bg-white">
+                  <div class="img-zoom aspect-[4/3] grid grid-cols-2 gap-px bg-white">
+                    <img src="img/konasu.webp" alt="栽培中の小茄子" width="2048" height="1536" class="w-full h-full object-cover" />
+                    <img src="img/sasanoha.webp" alt="白いリボンで束ね梱包された笹の葉" width="1448" height="1086" class="w-full h-full object-cover" />
+                  </div>
+                  <div class="p-5">
+                    <h4 class="text-2xl font-mincho font-bold text-gray-900 mb-2">農産品</h4>
+                    <p class="text-base text-gray-900 leading-relaxed">生鮮野菜・塩漬け野菜<br />キノコ類・加工食品</p>
+                  </div>
+                </div>
+                <div class="group rounded-2xl border border-slate-200 overflow-hidden bg-white">
+                  <div class="img-zoom aspect-[4/3]"><img src="img/ishi.webp" alt="研磨された天然石材" width="3520" height="4693" class="w-full h-full object-cover" /></div>
+                  <div class="p-5">
+                    <h4 class="text-2xl font-mincho font-bold text-gray-900 mb-2">天然石材</h4>
+                    <p class="text-base text-gray-900 leading-relaxed">薬石・メノウ・水晶<br />岩塩・花崗岩</p>
+                  </div>
+                </div>
+                <div class="group rounded-2xl border border-slate-200 overflow-hidden bg-white">
+                  <div class="aspect-[4/3] bg-gradient-to-br from-slate-100 to-slate-200 flex flex-col items-center justify-center gap-3 text-slate-400" role="img" aria-label="生活雑貨の商品画像準備中">
+                    <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-9-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                    <span class="text-xs font-bold tracking-wider">商品画像準備中</span>
+                  </div>
+                  <div class="p-5">
+                    <h4 class="text-2xl font-mincho font-bold text-gray-900 mb-2">生活雑貨</h4>
+                    <p class="text-base text-gray-900 leading-relaxed">使い捨て工業用品<br />日用品</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-8 flex justify-end pt-7 border-t border-slate-100">
+                <a href="/products/#export" class="inline-flex items-center justify-center gap-2 text-[20px] text-primary font-bold hover:text-primary-dark transition group"
+                  >詳しく見る<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg
+                ></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 日本から中国へ -->
+          <article id="services-import" class="reveal bg-primary-dark text-white rounded-3xl shadow-[0_22px_60px_-30px_rgba(0,61,130,0.7)] overflow-hidden">
+            <div class="p-6 md:p-10">
+              <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-5 mb-8">
+                <div>
+                  <span class="inline-flex items-center gap-2 text-xs font-bold text-[#dfe9e3] bg-white/10 border border-white/20 px-3 py-1.5 rounded-full mb-4"> <span class="w-2 h-2 bg-[#a9c1b4] rounded-full"></span> IMPORT TO CHINA </span>
+                  <h3 class="text-2xl md:text-3xl font-mincho font-bold"><span class="text-4xl md:text-5xl">日本から</span>中国へ</h3>
+                </div>
+                <p class="md:max-w-xl text-sm md:text-base text-[#dfe9e3] leading-relaxed">日本産の高品質な素材を、中国国内メーカーへ。専門的な代理販売と安定供給で橋渡しします。</p>
+              </div>
+
+              <div class="grid md:grid-cols-2 gap-5 max-w-4xl mx-auto">
+                <div class="group rounded-2xl overflow-hidden bg-white text-gray-800">
+                  <div class="img-zoom aspect-[4/3]"><img src="img/product-pearl.webp" alt="アコヤ真珠" width="1021" height="766" class="w-full h-full object-cover" /></div>
+                  <div class="p-5">
+                    <h4 class="text-2xl font-mincho font-bold text-gray-900 mb-2">真珠製品</h4>
+                    <p class="text-base text-gray-900 leading-relaxed">アコヤ真珠・マベ真珠<br /><span class="text-primary font-medium">鑑別書発行可</span></p>
+                  </div>
+                </div>
+                <div class="group rounded-2xl overflow-hidden bg-white text-gray-800">
+                  <div class="img-zoom aspect-[4/3]"><img src="img/product-leather.webp" alt="高級皮革" width="1448" height="1086" class="w-full h-full object-cover" /></div>
+                  <div class="p-5">
+                    <h4 class="text-2xl font-mincho font-bold text-gray-900 mb-2">高級皮革</h4>
+                    <p class="text-base text-gray-900 leading-relaxed">日本産牛革<br />中国メーカー向け</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-8 flex justify-end pt-7 border-t border-white/15">
+                <a href="/products/#import" class="inline-flex items-center justify-center gap-2 text-[20px] text-white font-bold hover:text-[#c9d8ce] transition group"
+                  >詳しく見る<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg
+                ></a>
+              </div>
+            </div>
+          </article>
+
+          <div class="reveal text-center pt-3">
+            <p class="text-gray-900 text-base mb-5">掲載商品以外の日中貿易・輸出入代行もご相談いただけます。</p>
+            <a href="/contact/" class="inline-flex items-center justify-center bg-primary text-white text-lg md:text-xl px-12 md:px-14 py-4 md:py-5 rounded-full font-medium hover:bg-primary-dark transition shadow-lg">商品について相談する</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="workflow" class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16 reveal">
+          <p class="text-primary text-sm font-bold tracking-[0.2em] uppercase mb-3">Workflow</p>
+          <h2 class="text-[36px] font-mincho font-bold text-gray-900 mb-4">取引の流れ</h2>
+          <p class="text-gray-900">輸出入ともに、スムーズで透明性の高いプロセスで進行します。</p>
+          <p class="text-gray-900 mt-3">※精算（代金のお支払い）は、輸出入とも検品・出荷・通関より前に行う先払いとなります。</p>
+        </div>
+
+        <div class="mx-auto space-y-16 bg-secondary rounded-2xl p-6 md:p-10 lg:p-12">
+          <!-- 輸出フロー：中国から日本へ（確認済み） -->
+          <div>
+            <div class="reveal flex flex-wrap items-center justify-between gap-3 mb-8">
+              <h3 class="text-lg font-bold text-gray-800">輸出の流れ（中国 → 日本）</h3>
+              <!-- <span class="text-xs font-bold text-primary bg-white border border-primary/20 rounded-full px-3 py-1">確認済み</span> -->
+            </div>
+            <div class="flex flex-col md:flex-row md:items-stretch justify-center gap-2">
+              <div class="reveal flex flex-col items-center md:flex-1">
+                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-primary text-white text-sm font-bold mb-3">01</span>
+                <div class="w-full bg-white border border-primary/20 rounded-lg text-center overflow-hidden">
+                  <div class="img-zoom aspect-square"><img src="img/daihyo.webp" alt="代表 陸涛が直接ご相談に対応" width="1386" height="1143" class="w-full h-full object-cover" /></div>
+                  <div class="flex flex-col items-center justify-center px-3 py-4">
+                    <h4 class="font-bold text-gray-800 mb-2">お問い合わせ</h4>
+                    <p class="text-xs leading-5 text-gray-900">日本語でご相談</p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center justify-center flex-shrink-0 md:w-5 py-1 md:py-0">
+                <svg class="w-5 h-5 text-primary-light rotate-90 md:rotate-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M6 4l8 6-8 6V4z"></path></svg>
+              </div>
+
+              <div class="reveal reveal-delay-1 flex flex-col items-center md:flex-1">
+                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-primary text-white text-sm font-bold mb-3">02</span>
+                <div class="w-full bg-white border border-primary/20 rounded-lg text-center overflow-hidden">
+                  <div class="img-zoom aspect-square"><img src="img/step-sample-garlic.webp" alt="サンプルとして梱包されたニンニク" width="900" height="1201" class="w-full h-full object-cover" /></div>
+                  <div class="flex flex-col items-center justify-center px-3 py-4">
+                    <h4 class="font-bold text-gray-800 mb-2">サンプル送付</h4>
+                    <p class="text-xs leading-5 text-gray-900">現物で品質を確認</p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center justify-center flex-shrink-0 md:w-5 py-1 md:py-0">
+                <svg class="w-5 h-5 text-primary-light rotate-90 md:rotate-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M6 4l8 6-8 6V4z"></path></svg>
+              </div>
+
+              <div class="reveal reveal-delay-2 flex flex-col items-center md:flex-1">
+                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-primary text-white text-sm font-bold mb-3">03</span>
+                <div class="w-full bg-white border border-primary/20 rounded-lg text-center overflow-hidden">
+                  <div class="img-zoom aspect-square"><img src="img/ninniku-sentaku.webp" alt="品質・サイズを一つひとつ選別するスタッフ" width="1279" height="747" class="w-full h-full object-cover" /></div>
+                  <div class="flex flex-col items-center justify-center px-3 py-4">
+                    <h4 class="font-bold text-gray-800 mb-2">お見積もり</h4>
+                    <p class="text-xs leading-5 text-gray-900">数量・納期・条件</p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center justify-center flex-shrink-0 md:w-5 py-1 md:py-0">
+                <svg class="w-5 h-5 text-primary-light rotate-90 md:rotate-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M6 4l8 6-8 6V4z"></path></svg>
+              </div>
+
+              <div class="reveal reveal-delay-3 flex flex-col items-center md:flex-1">
+                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-primary text-white text-sm font-bold mb-3">04</span>
+                <div class="w-full bg-white border border-primary/20 rounded-lg text-center overflow-hidden">
+                  <div class="img-zoom aspect-square"><img src="img/step-contract-factory.webp" alt="実際に確認できる提携工場の様子" width="900" height="675" class="w-full h-full object-cover" /></div>
+                  <div class="flex flex-col items-center justify-center px-3 py-4">
+                    <h4 class="font-bold text-gray-800 mb-2">ご契約</h4>
+                    <p class="text-xs leading-5 text-gray-900">取引条件を確定</p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center justify-center flex-shrink-0 md:w-5 py-1 md:py-0">
+                <svg class="w-5 h-5 text-primary-light rotate-90 md:rotate-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M6 4l8 6-8 6V4z"></path></svg>
+              </div>
+
+              <div class="reveal reveal-delay-4 flex flex-col items-center md:flex-1">
+                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-primary text-white text-sm font-bold mb-3">05</span>
+                <div class="w-full bg-white border border-primary/20 rounded-lg text-center overflow-hidden">
+                  <div class="img-zoom aspect-square"><img src="img/step-inspection-jyunsai.webp" alt="検品後、出荷前に整列されたジュンサイの荷物" width="900" height="507" class="w-full h-full object-cover" /></div>
+                  <div class="flex flex-col items-center justify-center px-3 py-4">
+                    <h4 class="font-bold text-gray-800 mb-2">精算・検品・通関</h4>
+                    <p class="text-xs leading-5 text-gray-900">輸出手続きを一貫対応</p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center justify-center flex-shrink-0 md:w-5 py-1 md:py-0">
+                <svg class="w-5 h-5 text-primary-light rotate-90 md:rotate-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M6 4l8 6-8 6V4z"></path></svg>
+              </div>
+
+              <div class="reveal reveal-delay-5 flex flex-col items-center md:flex-1">
+                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-primary text-white text-sm font-bold mb-3">06</span>
+                <div class="w-full bg-white border border-primary/20 rounded-lg text-center overflow-hidden">
+                  <div class="img-zoom aspect-square"><img src="img/step-delivery-warehouse.webp" alt="出荷準備が整い梱包されたジュンサイ" width="900" height="676" class="w-full h-full object-cover" /></div>
+                  <div class="flex flex-col items-center justify-center px-3 py-4">
+                    <h4 class="font-bold text-gray-800 mb-2">納品</h4>
+                    <p class="text-xs leading-5 text-gray-900">ご指定先へお届け</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 輸入フロー：日本から中国へ -->
+          <div class="border-t border-primary/10 pt-12">
+            <div class="reveal flex flex-wrap items-center justify-between gap-3 mb-8">
+              <h3 class="text-lg font-bold text-gray-800">輸入の流れ（日本 → 中国）</h3>
+            </div>
+            <!-- 1行目：01〜06（輸出フローと同じ6枠構成で、1項目あたりの幅を揃える） -->
+            <div class="flex flex-col md:flex-row md:items-stretch justify-center gap-2">
+              <div class="reveal flex flex-col items-center md:basis-[calc((100%-11.25rem)/6)] md:grow-0 md:shrink-0">
+                <div class="w-full bg-white/80 border border-gray-200 rounded-lg text-center overflow-hidden">
+                  <div class="flex flex-col items-center justify-center px-3 py-6">
+                    <span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-primary-light text-white text-sm font-bold mb-3">01</span>
+                    <h4 class="font-bold text-gray-800 mb-2">お問い合わせ</h4>
+                    <p class="text-xs leading-5 text-gray-900">商品・条件をご相談</p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center justify-center flex-shrink-0 md:w-5 py-1 md:py-0">
+                <svg class="w-5 h-5 text-primary-light rotate-90 md:rotate-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M6 4l8 6-8 6V4z"></path></svg>
+              </div>
+
+              <div class="reveal reveal-delay-1 flex flex-col items-center md:basis-[calc((100%-11.25rem)/6)] md:grow-0 md:shrink-0">
+                <div class="w-full bg-white/80 border border-gray-200 rounded-lg text-center overflow-hidden">
+                  <div class="flex flex-col items-center justify-center px-3 py-6">
+                    <span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-primary-light text-white text-sm font-bold mb-3">02</span>
+                    <h4 class="font-bold text-gray-800 mb-2">お見積り</h4>
+                    <p class="text-xs leading-5 text-gray-900">数量・納期・条件を確認</p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center justify-center flex-shrink-0 md:w-5 py-1 md:py-0">
+                <svg class="w-5 h-5 text-primary-light rotate-90 md:rotate-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M6 4l8 6-8 6V4z"></path></svg>
+              </div>
+
+              <div class="reveal reveal-delay-2 flex flex-col items-center md:basis-[calc((100%-11.25rem)/6)] md:grow-0 md:shrink-0">
+                <div class="w-full bg-white/80 border border-gray-200 rounded-lg text-center overflow-hidden">
+                  <div class="flex flex-col items-center justify-center px-3 py-6">
+                    <span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-primary-light text-white text-sm font-bold mb-3">03</span>
+                    <h4 class="font-bold text-gray-800 mb-2">サンプル送付</h4>
+                    <p class="text-xs leading-5 text-gray-900">日本側から現物を送付</p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center justify-center flex-shrink-0 md:w-5 py-1 md:py-0">
+                <svg class="w-5 h-5 text-primary-light rotate-90 md:rotate-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M6 4l8 6-8 6V4z"></path></svg>
+              </div>
+
+              <div class="reveal reveal-delay-3 flex flex-col items-center md:basis-[calc((100%-11.25rem)/6)] md:grow-0 md:shrink-0">
+                <div class="w-full bg-white/80 border border-gray-200 rounded-lg text-center overflow-hidden">
+                  <div class="flex flex-col items-center justify-center px-3 py-6">
+                    <span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-primary-light text-white text-sm font-bold mb-3">04</span>
+                    <h4 class="font-bold text-gray-800 mb-2">ご契約</h4>
+                    <p class="text-xs leading-5 text-gray-900">取引条件を確定</p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center justify-center flex-shrink-0 md:w-5 py-1 md:py-0">
+                <svg class="w-5 h-5 text-primary-light rotate-90 md:rotate-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M6 4l8 6-8 6V4z"></path></svg>
+              </div>
+
+              <div class="reveal reveal-delay-4 flex flex-col items-center md:basis-[calc((100%-11.25rem)/6)] md:grow-0 md:shrink-0">
+                <div class="w-full bg-white/80 border border-gray-200 rounded-lg text-center overflow-hidden">
+                  <div class="flex flex-col items-center justify-center px-3 py-6">
+                    <span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-primary-light text-white text-sm font-bold mb-3">05</span>
+                    <h4 class="font-bold text-gray-800 mb-2">精算</h4>
+                    <p class="text-xs leading-5 text-gray-900">代金のお支払い</p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center justify-center flex-shrink-0 md:w-5 py-1 md:py-0">
+                <svg class="w-5 h-5 text-primary-light rotate-90 md:rotate-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M6 4l8 6-8 6V4z"></path></svg>
+              </div>
+
+              <div class="reveal reveal-delay-5 relative flex flex-col items-center md:basis-[calc((100%-11.25rem)/6)] md:grow-0 md:shrink-0 overflow-visible">
+                <div class="w-full bg-white/80 border border-gray-200 rounded-lg text-center overflow-hidden">
+                  <div class="flex flex-col items-center justify-center px-3 py-6">
+                    <span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-primary-light text-white text-sm font-bold mb-3">06</span>
+                    <h4 class="font-bold text-gray-800 mb-2">検品出荷</h4>
+                    <p class="text-xs leading-5 text-gray-900">出荷前に検品を実施</p>
+                  </div>
+                </div>
+                <!-- インナー幅の外側にはみ出して配置する、次の段への接続矢印 -->
+                <div class="hidden md:flex items-center justify-center absolute top-1/2 -right-7 -translate-y-1/2 z-10" aria-hidden="true">
+                  <svg class="w-5 h-5 text-primary-light" fill="currentColor" viewBox="0 0 20 20"><path d="M6 4l8 6-8 6V4z"></path></svg>
+                </div>
+              </div>
+            </div>
+
+            <!-- 2行目：07〜08（1行目と同じ固定幅の計算式を使い、要素数に関係なく幅を一致させる） -->
+            <div class="flex flex-col md:flex-row md:items-stretch justify-center md:justify-start gap-2 mt-2">
+              <div class="reveal reveal-delay-1 flex flex-col items-center md:basis-[calc((100%-11.25rem)/6)] md:grow-0 md:shrink-0">
+                <div class="w-full bg-white/80 border border-gray-200 rounded-lg text-center overflow-hidden">
+                  <div class="flex flex-col items-center justify-center px-3 py-6">
+                    <span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-primary-light text-white text-sm font-bold mb-3">07</span>
+                    <h4 class="font-bold text-gray-800 mb-2">通関</h4>
+                    <p class="text-xs leading-5 text-gray-900">輸入手続きを手配</p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center justify-center flex-shrink-0 md:w-5 py-1 md:py-0">
+                <svg class="w-5 h-5 text-primary-light rotate-90 md:rotate-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M6 4l8 6-8 6V4z"></path></svg>
+              </div>
+
+              <div class="reveal reveal-delay-2 flex flex-col items-center md:basis-[calc((100%-11.25rem)/6)] md:grow-0 md:shrink-0">
+                <div class="w-full bg-white/80 border border-gray-200 rounded-lg text-center overflow-hidden">
+                  <div class="flex flex-col items-center justify-center px-3 py-6">
+                    <span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-primary-light text-white text-sm font-bold mb-3">08</span>
+                    <h4 class="font-bold text-gray-800 mb-2">納品</h4>
+                    <p class="text-xs leading-5 text-gray-900">中国国内メーカーへ</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="results" class="py-20 md:py-28 bg-secondary">
+      <div class="container mx-auto px-4 max-w-6xl">
+        <div class="text-center reveal max-w-3xl mx-auto mb-12">
+          <p class="text-primary text-sm font-light tracking-[0.2em] uppercase mb-3">Track Record</p>
+          <h2 class="text-[36px] font-mincho font-bold text-gray-900 mb-5">取引実績</h2>
+          <div class="w-14 h-1 bg-primary mx-auto mb-6 rounded-full"></div>
+          <p class="text-gray-900 leading-relaxed">積み重ねてきた取引を、客観的な数字で。取引社数や取扱量、商品別の実績を分かりやすくご紹介します。</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-8 reveal max-w-xl mx-auto">
+          <div class="bg-white rounded-2xl border border-slate-200 p-7 text-center shadow-sm">
+            <p class="text-base font-light text-gray-900 mb-3">取引社数</p>
+            <p class="text-5xl font-light text-primary">13<span class="text-lg text-gray-500 ml-2">社</span></p>
+          </div>
+          <div class="bg-white rounded-2xl border border-slate-200 p-7 text-center shadow-sm">
+            <p class="text-base font-light text-gray-900 mb-3">年商</p>
+            <p class="text-5xl font-light text-primary">1.8<span class="text-lg text-gray-500 ml-2">億円</span></p>
+            <p class="text-sm text-gray-900 mt-2">※2025年実績</p>
+          </div>
+        </div>
+
+        <div class="text-center reveal reveal-delay-1 mb-6">
+          <p class="text-sm font-light tracking-wider text-primary mb-1">ANNUAL VOLUME</p>
+          <h3 class="text-[28px] font-mincho font-bold text-gray-900">品目別 年間取扱量</h3>
+        </div>
+
+        <div class="grid lg:grid-cols-[1.4fr_1fr] gap-6 reveal reveal-delay-1">
+          <div class="bg-white rounded-2xl border border-slate-200 p-6 md:p-8 shadow-sm">
+            <div class="mb-6">
+              <p class="text-sm font-light tracking-wider text-primary mb-1">AGRICULTURAL PRODUCTS</p>
+              <h3 class="text-2xl font-mincho font-bold text-gray-900">農産品</h3>
+            </div>
+            <div class="grid sm:grid-cols-2 gap-x-6">
+              <div class="overflow-x-auto">
+                <table class="w-full text-base">
+                  <thead>
+                    <tr class="border-b-2 border-primary/20">
+                      <th class="text-left font-light text-gray-600 py-2.5 px-2">品目</th>
+                      <th class="text-right font-light text-gray-600 py-2.5 px-2">年間取扱量</th>
+                    </tr>
+                  </thead>
+                  <tbody class="divide-y divide-slate-100">
+                    <tr class="even:bg-slate-50">
+                      <td class="py-2.5 px-2 font-light text-gray-900">ジュンサイ</td>
+                      <td class="py-2.5 px-2 text-right text-primary font-light">48<span class="text-gray-400 font-light text-sm ml-1">トン/年</span></td>
+                    </tr>
+                    <tr class="even:bg-slate-50">
+                      <td class="py-2.5 px-2 font-light text-gray-900">ニンニク</td>
+                      <td class="py-2.5 px-2 text-right text-primary font-light">120<span class="text-gray-400 font-light text-sm ml-1">トン/年</span></td>
+                    </tr>
+                    <tr class="even:bg-slate-50">
+                      <td class="py-2.5 px-2 font-light text-gray-900">小茄子（民田茄子）</td>
+                      <td class="py-2.5 px-2 text-right text-primary font-light">120<span class="text-gray-400 font-light text-sm ml-1">トン/年</span></td>
+                    </tr>
+                    <tr class="even:bg-slate-50">
+                      <td class="py-2.5 px-2 font-light text-gray-900">高菜</td>
+                      <td class="py-2.5 px-2 text-right text-primary font-light">90<span class="text-gray-400 font-light text-sm ml-1">トン/年</span></td>
+                    </tr>
+                    <tr class="even:bg-slate-50">
+                      <td class="py-2.5 px-2 font-light text-gray-900">野沢菜</td>
+                      <td class="py-2.5 px-2 text-right text-primary font-light">54<span class="text-gray-400 font-light text-sm ml-1">トン/年</span></td>
+                    </tr>
+                    <tr class="even:bg-slate-50">
+                      <td class="py-2.5 px-2 font-light text-gray-900">菜の花</td>
+                      <td class="py-2.5 px-2 text-right text-primary font-light">36<span class="text-gray-400 font-light text-sm ml-1">トン/年</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="overflow-x-auto">
+                <table class="w-full text-base">
+                  <thead>
+                    <tr class="border-b-2 border-primary/20">
+                      <th class="text-left font-light text-gray-600 py-2.5 px-2">品目</th>
+                      <th class="text-right font-light text-gray-600 py-2.5 px-2">年間取扱量</th>
+                    </tr>
+                  </thead>
+                  <tbody class="divide-y divide-slate-100">
+                    <tr class="even:bg-slate-50">
+                      <td class="py-2.5 px-2 font-light text-gray-900">白瓜</td>
+                      <td class="py-2.5 px-2 text-right text-primary font-light">36<span class="text-gray-400 font-light text-sm ml-1">トン/年</span></td>
+                    </tr>
+                    <tr class="even:bg-slate-50">
+                      <td class="py-2.5 px-2 font-light text-gray-900">胡瓜</td>
+                      <td class="py-2.5 px-2 text-right text-primary font-light">90<span class="text-gray-400 font-light text-sm ml-1">トン/年</span></td>
+                    </tr>
+                    <tr class="even:bg-slate-50">
+                      <td class="py-2.5 px-2 font-light text-gray-900">木耳</td>
+                      <td class="py-2.5 px-2 text-right text-primary font-light">9.6<span class="text-gray-400 font-light text-sm ml-1">トン/年</span></td>
+                    </tr>
+                    <tr class="even:bg-slate-50">
+                      <td class="py-2.5 px-2 font-light text-gray-900">椎茸</td>
+                      <td class="py-2.5 px-2 text-right text-primary font-light">12<span class="text-gray-400 font-light text-sm ml-1">トン/年</span></td>
+                    </tr>
+                    <tr class="even:bg-slate-50">
+                      <td class="py-2.5 px-2 font-light text-gray-900">青梅</td>
+                      <td class="py-2.5 px-2 text-right text-primary font-light">13.5<span class="text-gray-400 font-light text-sm ml-1">トン/年</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-2xl border border-slate-200 p-6 md:p-8 shadow-sm">
+            <div class="mb-6">
+              <p class="text-sm font-light tracking-wider text-primary mb-1">LEAVES &amp; PEARL MATERIALS</p>
+              <h3 class="text-2xl font-mincho font-bold text-gray-900">葉物・真珠原料</h3>
+            </div>
+            <div class="overflow-x-auto">
+              <table class="w-full text-base">
+                <thead>
+                  <tr class="border-b-2 border-primary/20">
+                    <th class="text-left font-light text-gray-600 py-2.5 px-2">品目</th>
+                    <th class="text-right font-light text-gray-600 py-2.5 px-2">年間取扱量</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-100">
+                  <tr class="even:bg-slate-50">
+                    <td class="py-2.5 px-2 font-light text-gray-900">笹の葉</td>
+                    <td class="py-2.5 px-2 text-right text-primary font-light">750<span class="text-gray-400 font-light text-sm ml-1">万枚/年</span></td>
+                  </tr>
+                  <tr class="even:bg-slate-50">
+                    <td class="py-2.5 px-2 font-light text-gray-900">桜の葉</td>
+                    <td class="py-2.5 px-2 text-right text-primary font-light">37.5<span class="text-gray-400 font-light text-sm ml-1">万枚/年</span></td>
+                  </tr>
+                  <tr class="even:bg-slate-50">
+                    <td class="py-2.5 px-2 font-light text-gray-900">もみじ</td>
+                    <td class="py-2.5 px-2 text-right text-primary font-light">40<span class="text-gray-400 font-light text-sm ml-1">万枚/年</span></td>
+                  </tr>
+                  <tr class="even:bg-slate-50">
+                    <td class="py-2.5 px-2 font-light text-gray-900">真珠の核</td>
+                    <td class="py-2.5 px-2 text-right text-primary font-light">2,250kg<span class="text-gray-400 font-light text-sm ml-1">/年</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="message" class="py-20 bg-white">
+      <div class="container mx-auto px-4 max-w-4xl">
+        <div class="reveal text-center mb-10">
+          <p class="text-primary text-sm font-bold tracking-[0.2em] uppercase mb-3">Message</p>
+          <h2 class="text-[36px] font-mincho font-bold text-gray-900">代表あいさつ</h2>
+        </div>
+        <div class="flex flex-col md:flex-row gap-8 items-stretch">
+          <div class="reveal md:w-2/5 flex-shrink-0">
+            <img src="img/daihyo.webp" alt="杭州協栄貿易有限公司 代表取締役 陸涛" width="1386" height="1143" class="rounded-lg shadow-md w-full mt-[50px]" />
+          </div>
+          <div class="reveal reveal-delay-2 md:w-3/5 flex flex-col">
+            <div class="flex-1 flex flex-col justify-center">
+              <p class="text-gray-900 leading-relaxed mb-4">
+                平素は格別のお引き立てを賜り、厚く御礼申し上げます。<br />
+                山と海でつながる日中——杭州協栄貿易有限公司は、設立以来一貫して日中双方向貿易に専念してまいりました。
+              </p>
+              <p class="text-gray-900 leading-relaxed mb-4">長年にわたり「信義を守り、品質を第一とする」経営理念を堅持し、両国市場を深く深耕し、優良なサプライチェーンを整備し、安定かつ透明で効率的な通商の懸け橋を築いております。</p>
+              <p class="text-gray-900 leading-relaxed mb-4">確立された輸出入体制、現地対応力、豊富な業界経験を強みに、農産物・天然石材・日用品の対日輸出、ならびに日本産皮革・高級真珠・健康食品の輸入事業を展開し、国内外のお客様にワンストップで高品質な越境貿易ソリューションを提供しております。</p>
+              <p class="text-gray-900 leading-relaxed">今後も、相互補完・互恵共栄の初心を忘れず、厳格な品質管理、誠実なサービス、長期安定的な経営をもって、日中経済交流を推進し、すべての取引先様と末永く共に成長し、持続的な価値を創出してまいります。</p>
+            </div>
+            <p class="mt-8 pt-5 border-t border-gray-100 text-right font-bold text-gray-800 leading-relaxed">
+              <span class="text-sm font-medium text-gray-500">代表取締役</span><br />
+              <span class="text-xl tracking-wider">陸　涛</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 追加：会社概要（企業情報を一目で確認できる信頼要素） -->
+    <!-- <section id="company" class="py-20 bg-white">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <div class="text-center mb-12 reveal">
+                <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">会社概要</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+            </div>
+            <div class="reveal reveal-delay-1 bg-secondary rounded-xl shadow-sm overflow-hidden">
+                <dl class="divide-y divide-gray-200">
+                    <div class="grid grid-cols-1 sm:grid-cols-4 px-6 py-4 sm:px-8">
+                        <dt class="font-bold text-gray-500 sm:col-span-1">商号</dt>
+                        <dd class="sm:col-span-3">杭州協栄貿易有限公司（HANGZHOU XIERONG TRADE CO., LTD.）</dd>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-4 px-6 py-4 sm:px-8">
+                        <dt class="font-bold text-gray-500 sm:col-span-1">設立</dt>
+                        <dd class="sm:col-span-3">2005年</dd>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-4 px-6 py-4 sm:px-8">
+                        <dt class="font-bold text-gray-500 sm:col-span-1">資本金</dt>
+                        <dd class="sm:col-span-3">100万元</dd>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-4 px-6 py-4 sm:px-8">
+                        <dt class="font-bold text-gray-500 sm:col-span-1">代表者</dt>
+                        <dd class="sm:col-span-3">代表取締役　陸　涛</dd>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-4 px-6 py-4 sm:px-8">
+                        <dt class="font-bold text-gray-500 sm:col-span-1">所在地</dt>
+                        <dd class="sm:col-span-3">〒310013　中国浙江省杭州市西湖区五洲国際商業中心3-608, 609</dd>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-4 px-6 py-4 sm:px-8">
+                        <dt class="font-bold text-gray-500 sm:col-span-1">連絡先</dt>
+                        <dd class="sm:col-span-3">
+                            <span class="inline-block whitespace-nowrap">TEL: +86-186-6713-3131</span>　／　
+                            <span class="inline-block whitespace-nowrap">FAX: +86-571-8898-0296</span>
+                            <span class="inline-block whitespace-nowrap">MAIL: kyoei2005@163.com</span>
+                        </dd>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-4 px-6 py-4 sm:px-8">
+                        <dt class="font-bold text-gray-500 sm:col-span-1">事業内容</dt>
+                        <dd class="sm:col-span-3">農産品・天然石材・生活雑貨の対日輸出　／　真珠製品・皮革の対中輸入</dd>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-4 px-6 py-4 sm:px-8">
+                        <dt class="font-bold text-gray-500 sm:col-span-1">対応言語</dt>
+                        <dd class="sm:col-span-3">日本語・中国語</dd>
+                    </div>
+                </dl>
+            </div>
+        </div>
+    </section> -->
+
+    <section id="contact" class="py-24 bg-primary relative overflow-hidden">
+      <!-- 背景装飾 -->
+      <div class="absolute top-0 right-0 w-64 h-64 bg-white opacity-10 rounded-full transform translate-x-1/2 -translate-y-1/2"></div>
+      <div class="absolute bottom-0 left-0 w-48 h-48 bg-white opacity-10 rounded-full transform -translate-x-1/2 translate-y-1/2"></div>
+
+      <div class="container mx-auto px-4 relative z-10 text-center reveal">
+        <h2 class="text-3xl md:text-4xl font-light text-white mb-6">越境貿易に関するご相談はお気軽に</h2>
+        <p class="text-lg font-light mb-10 mx-auto text-white opacity-90">お見積りのご依頼、取扱商品についてのご質問、複雑な通関手続きに関するご相談など、<br class="hidden md:block" />日本語・中国語対応のスタッフが丁寧にお答えいたします。</p>
+        <a href="/contact/" class="inline-block bg-white text-primary font-medium text-xl px-12 py-5 rounded-full shadow-lg hover:bg-gray-50 transition duration-200"> お問い合わせ </a>
+        <!-- <p class="mt-6 text-white opacity-80 text-sm">お電話でのご相談: <span class="font-bold text-lg">+86-186-6713-3131</span> ／ メール: <span class="font-bold">kyoei2005@163.com</span></p> -->
+      </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white/60 py-16 md:py-20">
+      <div class="container mx-auto px-6 md:px-8 max-w-7xl">
+        <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8 pb-14 md:pb-16 border-b border-white/20">
+          <div>
+            <h3 class="text-2xl md:text-3xl font-bold tracking-[0.12em] text-white mb-4">杭州協栄貿易有限公司</h3>
+            <p class="text-xs md:text-sm tracking-[0.2em] text-white/30">HANGZHOU XIERONG TRADE CO., LTD.</p>
+            <div class="mt-4 space-y-1 text-sm text-white">
+              <p>統一社会信用コード（USCI CODE）：913301063219093622</p>
+              <p>税関登録コード：3301962K96</p>
+              <p>CIQ登録コード：3333616822</p>
+              <p>対外貿易経営者届出登録表コード：02307467</p>
+            </div>
+          </div>
+          <nav aria-label="フッターナビゲーション">
+            <ul class="flex flex-wrap gap-x-8 gap-y-3 text-base">
+              <li><a href="/" class="hover:text-white transition">ホーム</a></li>
+              <li><a href="/company/" class="hover:text-white transition">会社概要</a></li>
+              <li><a href="/services/" class="hover:text-white transition">事業内容</a></li>
+              <li><a href="/products/" class="hover:text-white transition">取扱商品</a></li>
+              <li><a href="/contact/" class="hover:text-white transition">お問い合わせ</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 pt-10 md:pt-12 text-sm">
+          <div class="space-y-3 text-base">
+            <p>〒310013　中国浙江省杭州市西湖区五洲国際商業中心3-608、609</p>
+            <p class="flex flex-wrap gap-x-5 gap-y-2">
+              <span class="whitespace-nowrap">TEL：+86-186-6713-3131</span>
+              <span class="whitespace-nowrap">FAX：+86-571-8898-0296</span>
+              <span class="whitespace-nowrap">MAIL：kyoei2005@163.com</span>
+            </p>
+          </div>
+          <p class="text-sm text-white/30 whitespace-nowrap">&copy; 2026 Hangzhou Xierong Trade Co., Ltd.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- モバイル用フローティングお問い合わせボタン -->
+    <a href="#contact" id="floating-cta" class="md:hidden fixed bottom-5 right-5 z-40 bg-primary text-white px-5 py-3 rounded-full shadow-lg font-bold text-sm flex items-center gap-2 opacity-0 pointer-events-none transition-opacity duration-300">
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+      お問い合わせ
+    </a>
+
+    <script>
+      const exportPageParams = new URLSearchParams(window.location.search);
+      if (exportPageParams.get("textBackground") === "1") {
+        document.querySelectorAll("svg").forEach((svg) => {
+          const svgColor = getComputedStyle(svg).color;
+          svg.style.setProperty("color", svgColor, "important");
+          svg.querySelectorAll("*").forEach((part) => {
+            part.style.setProperty("color", svgColor, "important");
+          });
+        });
+        document.documentElement.classList.add("export-text-background");
+      }
+      if (exportPageParams.get("exportVisual") === "1") {
+        document.documentElement.classList.add("export-visual");
+      }
+
+      // ヘッダー：スクロールで影を強調
+      const header = document.getElementById("site-header");
+      const floatingCta = document.getElementById("floating-cta");
+      window.addEventListener(
+        "scroll",
+        () => {
+          const scrolled = window.scrollY > 40;
+          header.classList.toggle("is-scrolled", scrolled);
+          if (floatingCta) {
+            floatingCta.classList.toggle("opacity-0", !scrolled);
+            floatingCta.classList.toggle("pointer-events-none", !scrolled);
+          }
+        },
+        { passive: true },
+      );
+
+      // モバイルメニュー開閉
+      const menuBtn = document.getElementById("mobile-menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const iconOpen = document.getElementById("menu-icon-open");
+      const iconClose = document.getElementById("menu-icon-close");
+      if (menuBtn && mobileMenu) {
+        menuBtn.addEventListener("click", () => {
+          const isOpen = mobileMenu.classList.toggle("is-open");
+          iconOpen.classList.toggle("hidden", isOpen);
+          iconClose.classList.toggle("hidden", !isOpen);
+          menuBtn.setAttribute("aria-expanded", String(isOpen));
+        });
+        mobileMenu.querySelectorAll("a").forEach((link) => {
+          link.addEventListener("click", () => {
+            mobileMenu.classList.remove("is-open");
+            iconOpen.classList.remove("hidden");
+            iconClose.classList.add("hidden");
+            menuBtn.setAttribute("aria-expanded", "false");
+          });
+        });
+      }
+
+      // ヒーロー：産地写真のクロスフェードスライドショー
+      (function heroSlideshow() {
+        const slides = document.querySelectorAll(".hero-slide");
+        const dots = document.querySelectorAll(".hero-dot");
+        const headline = document.getElementById("hero-headline");
+        const strengthLabel = document.getElementById("hero-strength-label");
+        if (!slides.length) return;
+        const params = new URLSearchParams(window.location.search);
+        const requestedSlide = Number.parseInt(params.get("slide") || "0", 10);
+        const isStatic = params.get("static") === "1";
+        let current = Number.isInteger(requestedSlide) && requestedSlide >= 0 && requestedSlide < slides.length ? requestedSlide : 0;
+        const setActive = (i) => {
+          slides.forEach((s, idx) => s.classList.toggle("is-active", idx === i));
+          dots.forEach((d, idx) => {
+            d.classList.toggle("opacity-40", idx !== i);
+            d.classList.toggle("opacity-100", idx === i);
+          });
+          if (headline && strengthLabel) {
+            headline.classList.add("is-fading");
+            strengthLabel.classList.add("is-fading");
+            setTimeout(() => {
+              headline.innerHTML = slides[i].dataset.catch || "";
+              strengthLabel.textContent = slides[i].dataset.label || "";
+              headline.classList.remove("is-fading");
+              strengthLabel.classList.remove("is-fading");
+            }, 350);
+          }
+          current = i;
+        };
+        setActive(current);
+        let timer = isStatic ? null : setInterval(() => setActive((current + 1) % slides.length), 8000);
+        dots.forEach((dot, idx) => {
+          dot.addEventListener("click", () => {
+            if (timer) clearInterval(timer);
+            setActive(idx);
+            if (!isStatic) timer = setInterval(() => setActive((current + 1) % slides.length), 8000);
+          });
+        });
+      })();
+
+      // スクロール連動フェードイン（reveal）／棒グラフ・接続線の伸長
+      (function scrollReveal() {
+        const targets = document.querySelectorAll(".reveal, .bar-fill, .line-fill");
+        const activate = (el) => {
+          if (el.classList.contains("line-fill")) {
+            el.style.width = "100%";
+          } else {
+            el.classList.add("is-visible");
+          }
+        };
+        if (!("IntersectionObserver" in window) || !targets.length) {
+          targets.forEach(activate);
+          return;
+        }
+        const io = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                activate(entry.target);
+                io.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.05, rootMargin: "0px 0px -10% 0px" },
+        );
+        targets.forEach((t) => io.observe(t));
+
+        // フェールセーフ：何らかの理由で監視漏れした要素は数秒後に強制表示し、
+        // コンテンツが非表示のまま残らないようにする
+        setTimeout(() => {
+          document.querySelectorAll(".reveal:not(.is-visible), .line-fill").forEach(activate);
+        }, 2500);
+      })();
+    </script>
+  </body>
+</html>
